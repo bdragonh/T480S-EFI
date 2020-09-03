@@ -382,7 +382,6 @@
 		</dict>
 		<key>Hide</key>
 		<array>
-			<string>Preboot</string>
 			<string>Recovery</string>
 		</array>
 		<key>Language</key>
@@ -523,7 +522,7 @@
 		<key>FirmwareFeatures</key>
 		<string>0xFC0FE176</string>
 		<key>Board-ID</key>
-		<string>Mac-B4831CEBD52A0C4C</string>
+		<string>Mac-B4831CEBD52A0000</string>
 		<key>FirmwareFeaturesMask</key>
 		<string>0xFF1FFF7F</string>
 		<key>BoardVersion</key>
@@ -533,7 +532,7 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>BiosVersion</key>
-		<string>MBP141.88Z.F000.B00.1910301943</string>
+		<string>MBP141.88Z.F000.B00.1910300000</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisAssetTag</key>
@@ -542,24 +541,18 @@
 		<string>0x1A</string>
 		<key>Family</key>
 		<string>MacBook Pro</string>
+		<key>Mobile</key>
+		<true/>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>C02847500CDHWVPJC</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>ProductName</key>
 		<string>MacBookPro14,1</string>
-		<key>SmUUID</key>
-		<string>0D538E58-B81D-46F7-8E41-B4146A9B50FF</string>
-		<key>Mobile</key>
-		<true/>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>EfiVersion</key>
 		<string>203.0.0.0.0</string>
-		<key>SerialNumber</key>
-		<string>C02XQ4YGHV29</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>BiosReleaseDate</key>
@@ -569,12 +562,10 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>InjectSystemID</key>
-		<true/>
-		<key>CustomUUID</key>
-		<string>5F7F07A6-08CA-4290-9A17-3A7CBC90731F</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
+		<key>InjectSystemID</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
