@@ -223,26 +223,6 @@
 				</dict>
 				<dict>
 					<key>Find</key>
-					<data>X1ExNQA=</data>
-					<key>Replace</key>
-					<data>WFExNQA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_Q15,0,N) to XQ15</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1ExNAA=</data>
-					<key>Replace</key>
-					<data>WFExNAA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_Q14,0,N) to XQ14</string>
-				</dict>
-				<dict>
-					<key>Find</key>
 					<data>R0JJRgM=</data>
 					<key>Replace</key>
 					<data>WEJJRgM=</data>
