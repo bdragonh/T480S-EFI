@@ -67,12 +67,13 @@ Lenovo ThinkPad T480s
 
 - one-key-hidpi : 一键开启 macOS HiDPI
 - ThinkpadAssistant : 开启THINKPAD驱动FN多功能键位
+- only-sleep : 不允许MACOS进行休眠，只允许睡眠。 
 
 ## 遗留问题
 
 1. Hidpi 只能使用 1440*810，超过此分辨率的情况下休眠后唤醒会花屏（雪花点）
 2. 个人文件保险箱 会使用CPU进行加密解密 T2芯片无解 （会拉慢文件IO）
-3. 长期休眠后，出现关机自动启动的情况。
+3. 长期休眠后，出现关机自动启动的情况。（假如不使用ONLY-SLEEP.APP进行设置 长期使用会有关机重启的问题）
 
 ## 致谢
 
