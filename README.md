@@ -63,5 +63,5 @@ Lenovo ThinkPad T480s
 ## 致谢
 
 - xma/T480-Clover  https://github.com/xma/T480-Clover
--MSzturc/ThinkpadAssistant https://github.com/MSzturc/ThinkpadAssistant
+- MSzturc/ThinkpadAssistant https://github.com/MSzturc/ThinkpadAssistant
 - GITHUB中黑苹果的所有爱好者们
