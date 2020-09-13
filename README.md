@@ -34,7 +34,7 @@ Lenovo ThinkPad T480s
 * [x] 声音
 * [x] SD 卡读取
 * [x] 触控板（多点触摸手势全开）
-* [x] Fn+F1-F12（FN快捷键完美）
+* [x] Fn+F1-F12 PtrSc（FN快捷键完美,PtrSc支持需要设置键盘快捷键 默认为CTRL+COMMAND+3 改为 F13）
 * [x] 小红点
 * [x] 雷电3 （没有测试，应该好使。）
 * [x] 休眠唤醒
@@ -47,6 +47,7 @@ Lenovo ThinkPad T480s
 ## 使用方法
 
 复制EFI到EFI分区并用Clover Configurator App打开config.plist修改三码
+改快捷键设置  将屏幕图片存储成文件 快捷键改为 按下PrtSc键  看到快捷提示为F13即成功
 
 ## 必装工具
 
@@ -62,4 +63,5 @@ Lenovo ThinkPad T480s
 ## 致谢
 
 - xma/T480-Clover  https://github.com/xma/T480-Clover
+-MSzturc/ThinkpadAssistant https://github.com/MSzturc/ThinkpadAssistant
 - GITHUB中黑苹果的所有爱好者们
