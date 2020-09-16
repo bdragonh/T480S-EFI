@@ -48,6 +48,7 @@ Lenovo ThinkPad T480s
 
 复制EFI到EFI分区并用Clover Configurator App打开config.plist修改三码
 改快捷键设置  【将屏幕图片存储成文件】 改为 PrtSc 备注：看到快捷提示为F13即可
+修改节能选项   【如果可能使，硬盘进入睡眠】 改为关闭，不然会影响休眠
 
 ## 必装工具
 
