@@ -296,6 +296,126 @@
 					<key>Comment</key>
 					<string>change Method(_WAK,1,S) to ZWAK</string>
 				</dict>
+				<dict>
+					<key>Find</key>
+					<data>T1NJRA==</data>
+					<key>Replace</key>
+					<data>WFNJRA==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>X09TSQ==</data>
+					<key>Replace</key>
+					<data>WE9TSQ==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change _OSI to XOSI</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>X0RTTQ==</data>
+					<key>Replace</key>
+					<data>WERTTQ==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change _DSM to XDSM</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>RUMwXw==</data>
+					<key>Replace</key>
+					<data>RUNfXw==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change EC0 to EC</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>SF9FQw==</data>
+					<key>Replace</key>
+					<data>RUNfXw==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change H_EC to EC</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>RUNEVg==</data>
+					<key>Replace</key>
+					<data>RUNfXw==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change ECDV to EC</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>TUVJXw==</data>
+					<key>Replace</key>
+					<data>SU1FSQ==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change MEI to IMEI</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>UENJMFZJRF8=</data>
+					<key>Replace</key>
+					<data>UENJMElHUFU=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change PCI0.VID to IGPU #1 (Thinkpad)</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>VklEXwhfQURSDAAAAgA=</data>
+					<key>Replace</key>
+					<data>SUdQVQhfQURSDAAAAgA=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change PCI0.VID to IGPU #2 (Thinkpad)</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>R0JJRgM=</data>
+					<key>Replace</key>
+					<data>WEJJRgM=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>battery GBIF03 to XBIF03</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>R0JTVAQ=</data>
+					<key>Replace</key>
+					<data>WEJTVAQ=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>battery GBST04 to XBST04</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>R0JJWAM=</data>
+					<key>Replace</key>
+					<data>WEJJWAM=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>battery GBIX03 to XBIX03</string>
+				</dict>
 			</array>
 			<key>SuspendOverride</key>
 			<true/>
@@ -304,20 +424,22 @@
 			<key>Fixes</key>
 			<dict>
 				<key>FixHPET</key>
-				<false/>
+				<true/>
 				<key>FixHDA</key>
 				<false/>
 				<key>FixRTC</key>
-				<false/>
-				<key>FixTMR</key>
-				<false/>
+				<true/>
+				<key>FixShutdown</key>
+				<true/>
 				<key>FixSBUS</key>
 				<false/>
 				<key>FixIPIC</key>
+				<true/>
+				<key>FixTMR</key>
+				<true/>
+				<key>AddIMEI</key>
 				<false/>
 				<key>FixWAK</key>
-				<false/>
-				<key>AddIMEI</key>
 				<false/>
 				<key>FixMutex</key>
 				<true/>
