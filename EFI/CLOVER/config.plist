@@ -296,6 +296,26 @@
 					<key>Comment</key>
 					<string>change Method(_WAK,1,S) to ZWAK</string>
 				</dict>
+				<dict>
+					<key>Find</key>
+					<data>X1RUUwk=</data>
+					<key>Replace</key>
+					<data>WlRUUwk=</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>change Method(_TTS,1,S) to ZTTS</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>X1RUUwE=</data>
+					<key>Replace</key>
+					<data>WlRUUwE=</data>
+					<key>Disabled</key>
+					<true/>
+					<key>Comment</key>
+					<string>change Method(_TTS,1,N) to ZTTS</string>
+				</dict>
 			</array>
 			<key>SuspendOverride</key>
 			<true/>
@@ -548,46 +568,10 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>FirmwareFeatures</key>
-		<string>0xFC0FE176</string>
-		<key>Board-ID</key>
-		<string>Mac-B4831CEBD52A0C4C</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF7F</string>
-		<key>BoardVersion</key>
-		<string>1.0</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>0x09</string>
-		<key>BiosVersion</key>
-		<string>MBP141.88Z.F000.B00.1910301943</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
-		<key>PlatformFeature</key>
-		<string>0x1A</string>
-		<key>Family</key>
-		<string>MacBook Pro</string>
-		<key>Mobile</key>
-		<true/>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>ProductName</key>
-		<string>MacBookPro14,1</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>EfiVersion</key>
-		<string>203.0.0.0.0</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
-		<key>BiosReleaseDate</key>
-		<string>10/30/2019</string>
 		<key>Version</key>
 		<string>1.0</string>
+		<key>Mobile</key>
+		<true/>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
