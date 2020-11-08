@@ -1,10 +1,9 @@
 
 ## 简介
 
-- Lenovo ThinkPad T480s Hackintosh EFI ，包含基础驱动，修改三码后开箱即用。
-- 适用版本：macOS Catalina 10.15.5。
-- 功能正常 USB 触摸板 个人保险箱 带联想主题 
-- 可使用此EFI直接进行10.15系统安装，可以正常升级10.15的小版本
+- Lenovo ThinkPad T480s Hackintosh EFI ，基于OC包含基础驱动，修改三码后开箱即用。
+- 适用版本：macOS Catalina 10.15.x,可以正常升级10.15的小版本 （不支持10.16不要升级）
+- 带OC引导界面主题  （按空格可以 显示恢复引导）  SIP状态 ENABLE 系统更安全
 
 ## 前提
 
@@ -47,9 +46,8 @@ Lenovo ThinkPad T480s
 
 ## 使用方法
 
-复制EFI到EFI分区并用Clover Configurator App打开config.plist修改三码
-改快捷键设置  【将屏幕图片存储成文件】 改为 PrtSc 备注：看到快捷提示为F13即可
-修改节能选项   【如果可能使，硬盘进入睡眠】 改为关闭，不然会影响休眠
+- 复制EFI到EFI分区 编辑EFI/OC/config.plist 修改SystemSerialNumber、SystemUUID、MLB三码
+- 改快捷键设置  【将屏幕图片存储成文件】 改为 PrtSc 备注：看到快捷提示为F13即可
 
 ## 必装工具
 
@@ -58,12 +56,13 @@ Lenovo ThinkPad T480s
 
 ## 遗留问题
 
-1. Hidpi 只能使用 1440*810，超过此分辨率的情况下休眠后唤醒会花屏（14寸最合理大小就是1440*810 其它分辨率也用不上）
-2. 个人文件保险箱 会使用CPU进行加密解密 因为没有T2芯片（可以不开保险箱）
-3. 长期休眠/唤醒多次后，出现关机变重启的BUG（用MAC的人基本不关机）
+1. Hidpi 只能使用 1440*810，超过此分辨率的情况下休眠后唤醒会花屏 （还好14寸屏幕 最完全的分辨率就是1440*810）
+2. 个人文件保险箱 会使用CPU进行加密解密 因为没有T2芯片 （TMP芯片 不支持苹果系统 无解）
+3. 双系统WIN10 设备管理器会有两个其它设备无法识别 （蓝牙 USB 独立显卡 指纹 都能正常工作 不影响正常使用）
 
 ## 致谢
 
-- xma/T480-Clover  https://github.com/xma/T480-Clover
 - MSzturc/ThinkpadAssistant https://github.com/MSzturc/ThinkpadAssistant
+- daliansky/OC-little https://github.com/daliansky/OC-little
+- neobi281/T480s-OC-Hackintosh https://github.com/neobi281/T480s-OC-Hackintosh
 - GITHUB中黑苹果的所有爱好者们
