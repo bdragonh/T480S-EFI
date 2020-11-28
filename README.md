@@ -4,6 +4,7 @@
 - Lenovo ThinkPad T480s Hackintosh EFI ，基于OC包含基础驱动，修改三码后开箱即用。
 - 适用版本：macOS Catalina （不支持BIGSUR）
 - 带OC引导界面主题  （按空格可以 显示恢复引导）  SIP正常 开启状态
+- HD620共享显存修改至3G
 
 ## 前提
 
