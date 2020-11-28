@@ -791,15 +791,15 @@
 		</array>
 		<key>Quirks</key>
 		<dict>
-			<key>NormalizeHeaders</key>
+			<key>FadtEnableReset</key>
 			<false/>
 			<key>RebaseRegions</key>
 			<false/>
 			<key>ResetHwSig</key>
 			<false/>
-			<key>ResetLogoStatus</key>
+			<key>NormalizeHeaders</key>
 			<false/>
-			<key>FadtEnableReset</key>
+			<key>ResetLogoStatus</key>
 			<false/>
 		</dict>
 		<key>Add</key>
@@ -1044,18 +1044,18 @@
 		<array/>
 		<key>Quirks</key>
 		<dict>
-			<key>EnableWriteUnprotector</key>
-			<true/>
 			<key>ProvideMaxSlide</key>
 			<integer>0</integer>
+			<key>EnableWriteUnprotector</key>
+			<true/>
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>SignalAppleOS</key>
 			<false/>
-			<key>AvoidRuntimeDefrag</key>
-			<true/>
 			<key>ProtectUefiServices</key>
 			<false/>
+			<key>AvoidRuntimeDefrag</key>
+			<true/>
 			<key>DiscardHibernateMap</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
@@ -1115,14 +1115,14 @@
 		</dict>
 		<key>Boot</key>
 		<dict>
-			<key>TakeoffDelay</key>
-			<integer>0</integer>
+			<key>PickerAudioAssist</key>
+			<false/>
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>PollAppleHotKeys</key>
 			<false/>
-			<key>Timeout</key>
-			<integer>5</integer>
+			<key>PickerMode</key>
+			<string>External</string>
 			<key>HibernateMode</key>
 			<string>NVRAM</string>
 			<key>ShowPicker</key>
@@ -1131,26 +1131,26 @@
 			<integer>1</integer>
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
-			<key>PickerAudioAssist</key>
-			<false/>
-			<key>PickerMode</key>
-			<string>External</string>
+			<key>TakeoffDelay</key>
+			<integer>0</integer>
+			<key>Timeout</key>
+			<integer>5</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
 			<dict>
-				<key>Comment</key>
-				<string>Not signed for security reasons</string>
+				<key>Auxiliary</key>
+				<false/>
 				<key>Name</key>
 				<string>CustomOS</string>
 				<key>Arguments</key>
 				<string></string>
 				<key>Enabled</key>
 				<false/>
+				<key>Comment</key>
+				<string>Not signed for security reasons</string>
 				<key>Path</key>
 				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
-				<key>Auxiliary</key>
-				<false/>
 			</dict>
 		</array>
 		<key>Tools</key>
@@ -1161,8 +1161,8 @@
 			<integer>3</integer>
 			<key>ApplePanic</key>
 			<false/>
-			<key>DisableWatchDog</key>
-			<true/>
+			<key>SerialInit</key>
+			<false/>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
 			<key>SysReport</key>
@@ -1171,8 +1171,8 @@
 			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
-			<key>SerialInit</key>
-			<false/>
+			<key>DisableWatchDog</key>
+			<true/>
 		</dict>
 		<key>BlessOverride</key>
 		<array/>
@@ -1231,26 +1231,26 @@
 		<dict>
 			<key>Cpuid1Mask</key>
 			<data></data>
-			<key>DummyPowerManagement</key>
-			<false/>
+			<key>MinKernel</key>
+			<string></string>
 			<key>Cpuid1Data</key>
 			<data></data>
 			<key>MaxKernel</key>
 			<string></string>
-			<key>MinKernel</key>
-			<string></string>
+			<key>DummyPowerManagement</key>
+			<false/>
 		</dict>
 		<key>Add</key>
 		<array>
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>BundlePath</key>
-				<string>Lilu.kext</string>
 				<key>Comment</key>
 				<string>Patch engine</string>
+				<key>BundlePath</key>
+				<string>Lilu.kext</string>
+				<key>MinKernel</key>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1263,11 +1263,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>IntelMausi.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1281,11 +1281,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>AirportBrcmFixup.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1299,11 +1299,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>BrcmBluetoothInjector.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1317,11 +1317,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>BrcmFirmwareData.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1335,11 +1335,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>BrcmPatchRAM3.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1353,11 +1353,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>EFICheckDisabler.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1371,11 +1371,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>HibernationFixup.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1389,11 +1389,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>IOElectrify.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1407,11 +1407,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>NightShiftUnlocker.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1425,11 +1425,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>NullEthernet.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1443,11 +1443,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>SMCLightSensor.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1461,11 +1461,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>Thunderbolt3Unblocker.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1479,11 +1479,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>USBInjectAll.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1497,11 +1497,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1515,11 +1515,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1533,11 +1533,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1551,11 +1551,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>RealtekRTL8111.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1569,11 +1569,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1587,12 +1587,12 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>BundlePath</key>
-				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
 				<string>Video patches</string>
+				<key>BundlePath</key>
+				<string>WhateverGreen.kext</string>
+				<key>MinKernel</key>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1605,11 +1605,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1623,11 +1623,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1641,12 +1641,12 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>BundlePath</key>
-				<string>AppleALC.kext</string>
 				<key>Comment</key>
 				<string>Audio patches</string>
+				<key>BundlePath</key>
+				<string>AppleALC.kext</string>
+				<key>MinKernel</key>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1659,11 +1659,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>NVMeFix.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1677,11 +1677,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>NoTouchID.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1695,11 +1695,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>CPUFriend.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1713,11 +1713,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>CPUFriendDataProvider.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1731,11 +1731,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>USBPorts.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1749,11 +1749,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>VoodooSMBus.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1767,11 +1767,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>VoodooRMI.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1785,11 +1785,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>VoodooRMI.kext/Contents/PlugIns/RMISMBus.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1803,11 +1803,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>VoodooRMI.kext/Contents/PlugIns/VoodooInput.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1821,11 +1821,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>VoodooRMI.kext/Contents/PlugIns/VoodooTrackpoint.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1839,11 +1839,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1857,11 +1857,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext/Contents/Plugins/VoodooPS2Keyboard.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -1875,11 +1875,11 @@
 			<dict>
 				<key>MaxKernel</key>
 				<string></string>
-				<key>MinKernel</key>
+				<key>Comment</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>SMCBatteryManager.kext</string>
-				<key>Comment</key>
+				<key>MinKernel</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
@@ -2177,8 +2177,8 @@
 			<false/>
 			<key>KeySupportMode</key>
 			<string>Auto</string>
-			<key>PointerSupportMode</key>
-			<string></string>
+			<key>KeyFiltering</key>
+			<false/>
 			<key>KeySupport</key>
 			<true/>
 			<key>TimerResolution</key>
@@ -2189,8 +2189,8 @@
 			<false/>
 			<key>KeyForgetThreshold</key>
 			<integer>5</integer>
-			<key>KeyFiltering</key>
-			<false/>
+			<key>PointerSupportMode</key>
+			<string></string>
 		</dict>
 		<key>ReservedMemory</key>
 		<array>
@@ -2211,7 +2211,7 @@
 		<dict>
 			<key>HashServices</key>
 			<false/>
-			<key>UnicodeCollation</key>
+			<key>AppleKeyMap</key>
 			<false/>
 			<key>AppleFramebufferInfo</key>
 			<false/>
@@ -2243,7 +2243,7 @@
 			<false/>
 			<key>FirmwareVolume</key>
 			<false/>
-			<key>AppleKeyMap</key>
+			<key>UnicodeCollation</key>
 			<false/>
 		</dict>
 		<key>Drivers</key>
@@ -2273,7 +2273,7 @@
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
+				<data>AAAAwA==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>AAAWWQ==</data>
 				<key>device-id</key>
@@ -2301,7 +2301,7 @@
 			<key>ROM</key>
 			<data></data>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>C02XQ4YAAAAA</string>
 			<key>AdviseWindows</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -2309,13 +2309,11 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro14,1</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>0D538E00-B800-46F7-8E00-B4146A9B5000</string>
 			<key>MLB</key>
-			<string></string>
+			<string>C02847500CDHAAAAA</string>
 			<key>SpoofVendor</key>
 			<true/>
-			<key>SystemMemoryStatus</key>
-			<string>Auto</string>
 		</dict>
 		<key>Automatic</key>
 		<true/>
