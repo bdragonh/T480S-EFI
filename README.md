@@ -2,9 +2,10 @@
 ## 简介
 
 - Lenovo ThinkPad T480s Hackintosh EFI ，基于OC包含基础驱动，修改三码后开箱即用。
-- 适用版本：macOS Catalina （不支持BIGSUR）
-- 带OC引导界面主题  （按空格可以 显示恢复引导）  SIP正常 开启状态
+- 适用版本：macOS Catalina （BIGSUR 未知 有条件的人可以测试 升级安装和全新安装 ）
+- 带OC引导界面主题  （启动过程中按ESC可以 进入启动菜单 按空格可以 显示恢复引导 ）  
 - HD620共享显存修改至3G
+- SIP正常 开启状态
 
 ## 前提
 
@@ -59,11 +60,11 @@ Lenovo ThinkPad T480s
 
 1. Hidpi 只能使用 1440*810，超过此分辨率的情况下休眠后唤醒会花屏 （还好14寸屏幕 最完全的分辨率就是1440*810）
 2. 个人文件保险箱 会使用CPU进行加密解密 因为没有T2芯片 （TPM芯片 不支持苹果系统 无解 只能闲置让CPU解码）
-3. 双系统WIN10 设备管理器会有两个其它设备无法识别 （蓝牙 USB 独立显卡 指纹 都能正常工作 不影响正常使用）
+3. 双系统WIN10 休眠后 唤醒 键盘无法输入 建议使用parallels desktop安装WIN10虚拟机 替代双系统启动
 
 ## 致谢
 
 - MSzturc/ThinkpadAssistant https://github.com/MSzturc/ThinkpadAssistant
 - daliansky/OC-little https://github.com/daliansky/OC-little
-- neobi281/T480s-OC-Hackintosh https://github.com/neobi281/T480s-OC-Hackintosh
+- mamadevme/T480s-OC-Hackintosh https://github.com/mamadevme/T480s-OC-Hackintosh
 - GITHUB中黑苹果的所有爱好者们
