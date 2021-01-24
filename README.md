@@ -1,4 +1,4 @@
-## 项目停更新！ 已放弃CATALINA 转为使用BIGSUR （https://github.com/bdragonh/T480S-BIGSUR-EFI）
+## 项目停更新！ 已放弃CATALINA 转为使用BIGSUR https://github.com/bdragonh/T480S-BIGSUR-EFI
 
 ## 简介
 
